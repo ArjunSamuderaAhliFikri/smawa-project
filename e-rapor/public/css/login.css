@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-black-primary: #1e1e1e;
+}
+
+section.wrapper-login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  background-color: #eaeaea;
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: 0.9fr 0.7fr;
+  width: 70%;
+  height: 75dvh;
+  background-color: #ffff;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+div.container-icon-login {
+  position: relative;
+}
+
+div.container-icon-login img {
+  position: absolute;
+  z-index: 999;
+  margin: 16% 6%;
+}
+
+span.wrapper-waves {
+  display: block;
+  position: relative;
+  width: 65%;
+  height: 120%;
+  background: linear-gradient(to bottom right, #66cc66, #16db65);
+  transform: translate(-100px, -70px) rotate(-15deg);
+}
+
+span.wrapper-waves::before {
+  content: "";
+  width: 60%;
+  height: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: -30%;
+  top: 10%;
+  border-radius: 120% 100%;
+  transform: rotate(-30deg);
+}
+
+span.wrapper-waves::after {
+  content: "";
+  width: 60%;
+  height: 50%;
+  background: linear-gradient(to top left, #16db65, 90%, #66cc66);
+  position: absolute;
+  right: -20%;
+  bottom: -3%;
+  border-radius: 50% 80%;
+  transform: rotate(-9deg);
+}
+
+div.container-login-form {
+  padding: 24px 12px;
+}
+
+div.wrapper-icon-smawa {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+div.smawa-logo {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+h2.smawa-text {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-black-primary);
+}
+
+h2.smawa-text > span {
+  text-transform: uppercase;
+}
+
+div.wrapper-text-login {
+  margin-top: 1.5rem;
+}
+
+div.wrapper-text-login > h1 {
+  text-transform: capitalize;
+  font-size: 2.1rem;
+  color: var(--color-black-primary);
+}
+
+div.wrapper-login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+div.wrapper-login-form form {
+  width: calc(100% - 36px);
+}
+
+div.box-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+div.box-form > label {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: var(--color-black-primary);
+  margin-bottom: 8px;
+}
+
+div.box-form > input {
+  display: block;
+  width: 100%;
+  border: 2px solid transparent;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  background-color: #e4e3e3;
+}
+
+div.password-wrapper {
+  position: relative;
+}
+
+div.forgot-password-wrapper {
+  position: absolute;
+  bottom: -45%;
+  right: 0;
+  margin-top: 12px;
+}
+
+div.forgot-password-wrapper > a {
+  font-size: 13px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+div.forgot-password-wrapper > a:hover {
+  color: rgb(0, 0, 165);
+}
+
+div.wrapper-button-submit {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+div.wrapper-button-submit > button {
+  width: 100%;
+  padding: 8px 18px;
+  border: none;
+  background-color: rgba(41, 171, 135, 1);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+div.wrapper-button-submit > button:hover {
+  background-color: rgb(0, 134, 96);
+}
+
+div.handle-switch-register-form {
+  padding: 16px 0;
+}
+
+div.handle-switch-register-form > h5 {
+  color: var(--color-black-primary);
+  font-weight: 500;
+}
+
+div.handle-switch-register-form > h5 > a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+}
+
+div.handle-switch-register-form > h5 > a:hover {
+  color: rgb(0, 0, 165);
+}
+
+div.wrapper-login-another-account {
+  width: calc(100% - 36px);
+  margin-top: 8px;
+}
+
+div.wrapper-or-element {
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+}
+
+div.wrapper-or-element > span.underline-or-letter {
+  width: 40%;
+  background-color: #7776;
+  height: 2px;
+}
+
+div.wrapper-another-account {
+  width: calc(100% - 40%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: skyblue; */
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+div.round-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+div.round-box:hover {
+  background-color: #5555;
+}
+
+div.round-box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
